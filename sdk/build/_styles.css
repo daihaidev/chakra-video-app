@@ -1,0 +1,135 @@
+.user-pic {
+    width: 50px;
+    height: 50px;
+}
+
+.chatScreen {
+	width: 100%;
+	height: calc(100vh - 215px);
+	border: 1px solid lightgrey;
+	margin:  15px 0px;
+	overflow-y: scroll;
+	flex-direction: column-reverse;
+	background-color: #fff;
+	border-radius: 3px !important;
+}
+
+.chatInput {
+	width: 100%;
+	border: 1px solid lightgrey !important;
+	resize: none !important;
+	outline: none !important;
+	height: 55px !important;
+	background-color: #fff;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-top: 17px;
+	padding-left: 11px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+    display: flex;
+    resize: none;
+    border-radius: 3px;
+    color: inherit;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.chatInput::-webkit-input-placeholder {
+	color: lightgrey;
+}
+.chatInput:-moz-placeholder { /* Firefox 18- */
+	color: lightgrey;
+}
+.chatInput::-moz-placeholder {  /* Firefox 19+ */
+	color: lightgrey;
+}
+.chatInput:-ms-input-placeholder {  
+	color: lightgrey;
+}
+
+.bubbleContainerUser {
+	display: flex;
+	width: 100%;
+	flex-direction: row-reverse;
+}
+
+.bubbleContainerAvatar {
+	display: flex;
+	width: 100%;
+}
+
+.bubbleContainerOperator {
+	display: flex;
+	width: 100%;
+}
+
+.bubble{
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 7px 18px;
+    position: relative;
+    vertical-align: top;
+    max-width: 75%;
+    word-break: break-all;
+}
+
+.bubble::before {
+    background-color: #F2F2F2;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  0px;
+}
+
+.avatar {
+	background-color: #087FFE;
+	color: #fff;
+    float: left;   
+   	margin: 15px;        
+}
+
+.avatar::before {
+	background-color: #087FFE;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
+
+.user {
+	background-color: #FF6200;
+	color: #fff;
+    float: right;    
+    margin: 15px;      
+}
+
+.user::before {
+	background-color: #8f5db7;
+    box-shadow: 1px -1px 1px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+
+.operator {
+	background-color: #dfd3c3; 
+	color: #000;
+    float: left;   
+    margin: 15px;      
+}
+
+.operator::before {
+	background-color: #dfd3c3; 
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
+

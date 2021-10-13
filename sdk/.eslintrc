@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "globals": {
+    "getAudioFromPolly": true,
+    
+  },
+  "plugins": [],
+  "rules": {
+    "arrow-parens": 0,
+    "no-debugger": 0,
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint"
+}

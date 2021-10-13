@@ -1,0 +1,11 @@
+export default Object.freeze({
+	DISCONNECTED: 0,
+	CONNECTING: 1,
+	AUTHORIZED: 2,
+	CONNECTED: 3,
+	INCALL: 4,
+	OFFLINE: 5,
+	DISCONNECTING: 6
+});
+
+  
